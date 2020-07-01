@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f = "http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:body>
+
+welcome to jsf
+
+<h:form>
+
+<h:outputLabel for="txtcourses" value="Courses :"/>
+<h:selectOneListbox  id="txtcourses" value="#{test.courses}">
+<!-- HardCoded Values -->
+<!-- <f:selectItem itemValue="R" itemLabel="Red" />
+<f:selectItem itemValue="B" itemLabel="Blue" />
+ -->
+ 
+ 
+ <f:selectItems value="#{test.mCourses}"/>
+ 
+ 
+</h:selectOneListbox><br/>
+<h:commandButton action="selectOneListBox" value="Submit" />
+<h:outputText  value="#{test.courses}" rendered="#{test.courses ne null}"/>
+
+</h:form>
+
+</h:body>
+</ui:composition>

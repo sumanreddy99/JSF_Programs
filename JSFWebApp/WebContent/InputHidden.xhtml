@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f = "http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+      <h:head>
+      
+      
+      <script type="text/javascript">
+
+function display()
+{
+	alert(document.getElementById('myform:message').value);
+}
+
+      </script>
+      </h:head>
+      
+<h:body>
+
+welcome to jsf
+
+<h:form id="myform">
+<h:inputHidden value="this is hidden value" id="message"/>
+<h:commandButton  value="click" onclick="display()" />
+</h:form>
+
+</h:body>
+</ui:composition>

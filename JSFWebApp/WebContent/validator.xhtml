@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f = "http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:body>
+
+welcome to jsf
+
+<h:form>
+<h:message for="d"  />
+<div>
+<h:inputText validatorMessage="must be between 30 to 100" required="true" id="d" >
+<f:validateDoubleRange maximum="100" minimum="30" for="d"/>
+</h:inputText><br/>
+
+<h:inputText  >
+<f:validateLongRange maximum="100" minimum="30"/>
+</h:inputText><br/>
+
+<h:inputText  >
+<f:validateLength maximum="100" minimum="30"/>
+</h:inputText><br/>
+
+<h:inputText  >
+<f:validateRegex pattern="/^[a-zA-Z0-9._-]+$/" /> 
+</h:inputText><br/>
+<h:commandButton  value="submit" />
+</div>
+</h:form>
+
+</h:body>
+</ui:composition>

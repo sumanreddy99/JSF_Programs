@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f = "http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:body>
+
+welcome to jsf
+
+<h:form>
+<h:panelGrid  border="1" columns="3">
+<f:facet name="header">
+<h:outputText value="This is header" />
+</f:facet>
+<h:inputText value="A" />
+<h:inputText value="B" />
+<h:inputText value="B" />
+<h:inputText value="B" />
+<h:inputText value="B" />
+<h:inputText value="B" />
+<f:facet name="footer">
+<h:panelGroup>
+<h:outputText value="feedback" />
+<h:commandButton  value="submit" />
+
+</h:panelGroup>
+</f:facet>
+
+
+</h:panelGrid>
+
+</h:form>
+
+</h:body>
+</ui:composition>

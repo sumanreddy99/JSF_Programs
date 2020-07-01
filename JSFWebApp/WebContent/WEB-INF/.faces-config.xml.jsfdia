@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:RuleBasedNavigation.xhtml"
+  PATH="RuleBasedNavigation.xhtml" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:RuleBasedNavigation.xhtml:0" NAME="item"
+   PATH="RuleBasedNavigation.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success:#{emp.checkIn()}:success.xhtml"
+    NAME="output" PATH="success.xhtml" TARGET="rules:success.xhtml"
+    TITLE="#{emp.checkIn()}:success" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:success.xhtml" PATH="success.xhtml"
+  SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>
